@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+body {
+  width: 100%;
+  font-size: 1.5625rem;
+  font-family: $ff-primary;
+  background: $clr-neutral-dark-blue;
+  display: grid;
+  place-content: center;
+}
+
+
+//Footer
+.attribution {
+  padding-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+
+  @include media-query(large) {
+    padding-top: 0;
+  }
+}
+.attribution a {
+  color: $clr-neutral-blue;
+}
