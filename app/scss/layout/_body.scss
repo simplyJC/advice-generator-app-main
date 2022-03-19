@@ -8,12 +8,13 @@ body {
   background: $clr-neutral-dark-blue;
   display: grid;
   place-content: center;
+  gap: 2rem;
 }
 
 
 //Footer
 .attribution {
-  padding-top: 2rem;
+  //padding-top: 9rem;
   font-size: 11px;
   text-align: center;
 

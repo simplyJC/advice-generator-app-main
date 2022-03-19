@@ -77,6 +77,7 @@ select {
   }
 }
 .card {
+  position: relative;
   background: #323a49;
   max-width: 27rem;
   display: flex;
@@ -102,9 +103,12 @@ select {
   padding: 1rem;
 }
 .card__divider-line {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 3rem 0;
 }
 .card__button-roll {
+  position: absolute;
+  bottom: -10%;
+  right: 43%;
   border: none;
   padding: 1rem;
   border-radius: 50%;
@@ -115,10 +119,6 @@ select {
   cursor: pointer;
   -webkit-animation: loading 1s ease-in-out;
           animation: loading 1s ease-in-out;
-}
-.card__button-roll:active {
-  -webkit-animation: loading 500ms ease-in-out infinite;
-          animation: loading 500ms ease-in-out infinite;
 }
 .card__button-roll--loading {
   -webkit-animation: loading 1s ease-in-out infinite;
@@ -151,10 +151,10 @@ body {
   background: #1f2632;
   display: grid;
   place-content: center;
+  gap: 2rem;
 }
 
 .attribution {
-  padding-top: 2rem;
   font-size: 11px;
   text-align: center;
 }
